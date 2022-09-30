@@ -1,0 +1,6 @@
+#comando para executar por ambiente
+java -jar geraoperacoeseventovcp.jar --spring.profiles.active=dev
+#comando para encriptar com o jasypt ex:dev
+java -cp jasypt-1.9.2.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI input=0Oracle#2022 password=B3 algorithm=PBEWithMD5AndDES
+incluir no properties do ambiente na chave correspondente ao password conforme exemplo abaixo
+spring.datasource.password=ENC(VIqvHjCd5TQscFGsQ2CBpcT27g+N3uqD) 
